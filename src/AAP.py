@@ -19,7 +19,7 @@ def hello():
 app = Flask(__name__)
 
 # Cargar el modelo entrenado
-model = joblib.load('C:/Users/elisa/OneDrive/Escritorio/Data Sciencie/ML-BosstingAlgoritmo/models/boosting_classifier_nestimators-20_learnrate-0.001_42.sav')
+model = joblib.load('boosting_classifier_nestimators-20_learnrate-0.001_42.sav')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
